@@ -12,10 +12,10 @@ var src = {
   tests: ['./test/**/*.js', '!test/{temp,temp/**}']
 };
 
-var index = "./bin/aigis";
+var index = "bin/aigis";
 
 gulp.task("exec:index", function(cb) {
-  exec("node " + index + " ./examples/aigis_config.yml", function(err, stdout, stderr) {
+  exec("node " + index + " run -c ./examples/aigis_config.yml", function(err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb();
