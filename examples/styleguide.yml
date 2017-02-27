@@ -33,7 +33,7 @@ dependencies:
 index: ./index.md
 
 # You can choose template engine : ejs, jade, handlebars
-template_engine: ejs
+template_engine: handlebars
 
 # The directory containing the tempalte files to generate pages
 # It must contain 'layout.xxx' and 'index.xxx' (.ejs or .jade or .hbs)
