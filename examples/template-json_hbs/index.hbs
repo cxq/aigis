@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="{{root}}aigis_assets/css/highlight/okadia.css" rel="stylesheet">
-    <link href="{{root}}aigis_assets/css/theme.css" rel="stylesheet">
-    <link href="{{root}}css/style.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="{{root}}aigis_assets/css/highlight/okadia.css" rel="stylesheet">
+  <link href="{{root}}aigis_assets/css/theme.css" rel="stylesheet">
+  <link href="{{root}}css/style.css" rel="stylesheet">
 
-    <script src="{{root}}aigis_assets/js/vendors/vue.js"></script>
-  </head>
+  <script src="{{root}}aigis_assets/js/vendors/vue.js"></script>
+</head>
 <body>
-  <div id="app" class="aigis-container">
+<div id="app">
+  <div class="aigis-container" v-bind:class="{ close : isNavigationClosed}">
     {{include "./sidemenu"}}
     <div class="aigis-contents">
+      <div class="hamburger" v-on:click="toggleNavigation" v-bind:class="{ 'hamburger--active' : !isNavigationClosed}">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
       <div class="aigis-contents__body">
         {{include "./components"}}
         <footer class="aigis-footer">Last update at {{timestamp}}</footer>
