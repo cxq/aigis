@@ -15,7 +15,7 @@ var src = {
 var index = "./bin/aigis";
 
 gulp.task("exec:index", function(cb) {
-  exec("node " + index + " run -c ./examples/styleguide.yml", function(err, stdout, stderr) {
+  exec("node " + index + " run -c ./examples/aigis_config.yml", function(err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb();
