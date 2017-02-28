@@ -39,10 +39,10 @@
     "marked": "^0.3.3",
     "moment": "^2.10.2",
     "object-assign": "^4.0.1",
-    "yargs": "^4.3.2"
+    "yargs": "^4.3.2",
+    "app-root-dir": "^1.0.2"
   },
   "devDependencies": {
-    "app-root-dir": "^1.0.2",
     "browser-sync": "^2.7.13",
     "gulp": "^3.9.0",
     "gulp-mocha": "^3.0.1",
