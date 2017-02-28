@@ -1,6 +1,6 @@
 docs/
 node_modules/
 /styleguide.yml
-styleguide/
+styleguide-build/
 /template*/
 /aigis_assets/
