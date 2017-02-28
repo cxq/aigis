@@ -5,7 +5,7 @@ var config = {
   source: [ './css', './demo.md' ],
   source_type: [ '.css', '.sass', '.scss', '.styl' ],
   dest: './styleguide2',
-  dependencies: [ './aigis_assets', './css' ],
+  dependencies: [ './assets', './css' ],
   index: './index.md',
   template_engine: 'ejs',
   template_dir: './template_ejs',

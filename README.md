@@ -31,7 +31,7 @@ This will create an `styleguide.yml` file (more on this below)
 $ ./node_modules/.bin/aigis init
 Created the following files and directories:
   styleguide.yml
-  aigis_assets
+  assets
   template_ejs
 ```
 
@@ -61,7 +61,7 @@ source:
   - ./style.css
 ```
 
-> Initially, the configuration file contains `source: aigis_assets`, You can run `aigis run` then generate sample style guide.
+> Initially, the configuration file contains `source: assets`, You can run `aigis run` then generate sample style guide.
 
 ## Adding comments
 

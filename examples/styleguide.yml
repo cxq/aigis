@@ -26,7 +26,7 @@ dest: ./styleguide-build
 # The assets needed to build the docs
 # You may put doc related assets here too: images, css, etc.
 dependencies:
-  - ./aigis_assets
+  - ./styleguide/assets
   - ./css
 
 # Index page created from markdown file
@@ -61,7 +61,7 @@ timestamp_format: 'YYYY/MM/DD HH:mm'
 
 preview_class: aigis-preview
 
-component_dir: ./html
+component_dir: ./styleguide/template
 
 output_collection:
   - category

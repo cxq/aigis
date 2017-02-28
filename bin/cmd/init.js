@@ -19,8 +19,8 @@ exports.handler = function init(argv) {
       src: 'default_config.yml'
     },
     {
-      src: 'aigis_assets',
-      dest: 'aigis_assets'
+      src: 'assets',
+      dest: 'assets'
     },
     {
       src: 'template_' + argv.engine,
