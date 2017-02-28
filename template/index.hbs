@@ -6,7 +6,7 @@
   <link href="{{root}}assets/css/highlight/okadia.css" rel="stylesheet">
   <link href="{{root}}assets/css/theme.css" rel="stylesheet">
   <link href="{{root}}css/style.css" rel="stylesheet">
-  {{include './head'}}
+  {{include './head' isComponentDir=true}}
 </head>
 <body>
 <div id="app">
@@ -27,6 +27,6 @@
 </div>
 <script src="{{root}}assets/js/vendors/vue.js"></script>
 <script src="{{root}}assets/js/app.js"></script>
-{{include './footer'}}
+{{include './footer' isComponentDir=true}}
 </body>
 </html>
