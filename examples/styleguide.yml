@@ -4,7 +4,7 @@ name: Styleguide
 
 # The directory containing the source files to parse recursively
 source:
-  - ./assets/css
+  - ./css
   - ./demo.md
 # You may alternately specify multiple directories
 # source:
@@ -26,7 +26,7 @@ dest: ./styleguide-build
 # The assets needed to build the docs
 # You may put doc related assets here too: images, css, etc.
 dependencies:
-  - ./styleguide/assets
+  - ./css
 
 # Index page created from markdown file
 index: ./index.md
