@@ -39,8 +39,7 @@
     "marked": "^0.3.3",
     "moment": "^2.10.2",
     "object-assign": "^4.0.1",
-    "yargs": "^4.3.2",
-    "app-root-dir": "^1.0.2"
+    "yargs": "^4.3.2"
   },
   "devDependencies": {
     "browser-sync": "^2.7.13",
