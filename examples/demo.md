@@ -58,7 +58,7 @@ button.ag-btn.ag-btn--primary
 ## `hbs`
 
 ```hbs
-{{include './button.html'}}
+{{include './components/button'}}
 <hr>
 <a class="ag-btn">{{name}}</a>
 <button class="ag-btn ag-btn--primary">{{name}}</button>
