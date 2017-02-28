@@ -2,7 +2,7 @@ exports.builder = {
   'c': {
     alias: 'config',
     describe: 'Path to config file',
-    default: './aigis_config.yml'
+    default: './styleguide.yml'
   }
 };
 

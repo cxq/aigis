@@ -25,12 +25,12 @@ aigis require "Config file" & "HTML Templates".
 aigis init
 ```
 
-This will create an `aigis_config.yml` file (more on this below)
+This will create an `styleguide.yml` file (more on this below)
 
 ```shell
 $ ./node_modules/.bin/aigis init
 Created the following files and directories:
-  aigis_config.yml
+  styleguide.yml
   aigis_assets
   template_ejs
 ```
@@ -53,7 +53,7 @@ $ ./node_modules/.bin/aigis init --engine jade
 
 ## Config file
 
-After `aigis init`, edit `aigis_config.yml`. You have to write relative path to your source files on `source`.
+After `aigis init`, edit `styleguide.yml`. You have to write relative path to your source files on `source`.
 
 ```yaml
 source:
@@ -91,7 +91,7 @@ category: module/button
 You're finally ready to generate a style guide!
 
 ```shell
-$ ./node_modules/.bin/aigis run -c ./aigis_config.yml
+$ ./node_modules/.bin/aigis run -c ./styleguide.yml
 ```
 
 Then you get following output.

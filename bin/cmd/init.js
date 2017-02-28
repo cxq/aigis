@@ -12,10 +12,10 @@ exports.handler = function init(argv) {
   var cwd = path.resolve();
   var exampleDir = path.join(__dirname, '../../examples');
   var colors = require('colors/safe');
-
+  
   var assets = [
     {
-      dest: 'aigis_config.yml',
+      dest: 'styleguide.yml',
       src: 'default_config.yml'
     },
     {
@@ -42,7 +42,7 @@ exports.handler = function init(argv) {
 
         try {
           var config = fs.readFileSync(_dest);
-          console.warn(colors.yellow('Cowardly refusing to overwrite existing: aigis_config.yml'));
+          console.warn(colors.yellow('Cowardly refusing to overwrite existing: styleguide.xml'));
         }
         catch (err) {
           console.log(colors.blue(' ', path.relative(cwd, _dest)));
