@@ -44,6 +44,9 @@ template_global_data: false
 # data passed to the template comes either from the config or by params
 template_global_data: true
 
+# data passed to the template comes either from the config or by params
+template_global_data: true
+
 # Aigis displays logs
 log: false
 
