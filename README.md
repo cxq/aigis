@@ -31,8 +31,8 @@ This will create an `styleguide.yml` file (more on this below)
 $ ./node_modules/.bin/aigis init
 Created the following files and directories:
   styleguide.yml
-  assets
-  template_ejs
+  styleguide/template
+  
 ```
 
 ## Choose Template Engine
