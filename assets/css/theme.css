@@ -432,6 +432,9 @@ tag: latest
 
 .aigis-module__content {
   position: relative;
+}
+
+.aigis-module__content > p {
   font-size: 16px;
 }
 
