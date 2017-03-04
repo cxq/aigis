@@ -5,7 +5,9 @@ Vue.component('aigis-module', {
   '<div class="aigis-module__filepath">{{sourcePath}}</div>' +
   '<div class="aigis-module__content">' +
   '<div class="aigis-module__actions">' +
-  '<button v-bind:class="{ active: isActive }" class="aigis-button" v-on:click="toggleHTML">HTML</button>' +
+  '<button v-bind:class="{ active: isActive }" class="aigis-button" v-on:click="toggleHTML">' +
+  '<span v-if="isActive">Hide</span><span v-else>Show</span> source' +
+  '</button>' +
   '</div>' +
   '<slot></slot>' +
   '</div>' +
