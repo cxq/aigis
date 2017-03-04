@@ -262,6 +262,11 @@ tag: latest
 ```
 
 */
+
+.aigis-categoryList li ul {
+  display: none;
+}
+
 .aigis-categoryList ul {
   padding: 0;
   font-size: 14px;
@@ -285,6 +290,16 @@ tag: latest
 
 .aigis-categoryList li[data-path-depth="0"] > a {
   font-weight: bold;
+}
+
+.aigis-categoryList li[data-path-depth="0"].current > a,
+.aigis-categoryList li[data-path-depth="0"].current > a:hover {
+  background-color: #87C0A2;
+  color: #fff;
+}
+
+.aigis-categoryList li[data-path-depth="0"].current ul {
+  display: block;
 }
 
 .aigis-categoryList li a:hover {
@@ -525,6 +540,7 @@ body {
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
+  background: #F8F9FB !important;
 }
 
 .hamburger {
@@ -634,7 +650,6 @@ body {
   box-sizing: border-box;
   width: auto;
   margin-right: auto;
-  background: #F8F9FB;
 }
 
 .aigis-container:after {
