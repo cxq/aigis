@@ -14,13 +14,14 @@
   <div class="aigis-container" v-bind:class="{ close : isNavigationClosed}">
     {{include "./sidemenu"}}
     <div class="aigis-contents">
-      <div class="aigis-contents__header">
+      <header class="aigis-contents__header">
+        <h1 class="aigis-title">{{title}}</h1>
         <div class="hamburger" v-on:click="toggleNavigation" v-bind:class="{ 'hamburger--active' : !isNavigationClosed}">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
         </div>
-      </div>
+      </header>
       <div class="aigis-contents__body">
         {{include "./components"}}
         <footer class="aigis-footer">Last update at {{timestamp}} - v{{version}}</footer>

@@ -59,6 +59,15 @@ tag:
   color: inherit;
 }
 
+.aigis-title {
+  padding-left: 20px;
+  border-left: 1px solid #fff;
+}
+
+.aigis-title:first-letter {
+  text-transform: uppercase;
+}
+
 /*
 ---
 name: Footer
@@ -214,7 +223,6 @@ tag: latest
   transition: left .2s ease-out;
   overflow-y: scroll;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-  z-index: 10;
 }
 
 .aigis-container.close .aigis-sidemenu {
@@ -544,10 +552,9 @@ body {
 }
 
 .hamburger {
-  display: inline-block;
+  position: absolute;
   overflow: visible;
   margin: 0;
-  padding: 15px;
   cursor: pointer;
   transition-timing-function: linear;
   transition-duration: .15s;
@@ -556,6 +563,8 @@ body {
   color: inherit;
   border: 0;
   background-color: transparent;
+  left: 15px;
+  top: 5px;
 }
 
 .hamburger:hover {
@@ -605,7 +614,7 @@ body {
 .hamburger .hamburger-inner,
 .hamburger .hamburger-inner:after,
 .hamburger .hamburger-inner:before {
-  background-color: #545D73;
+  background-color: #fff;
 }
 
 .hamburger .hamburger-inner {
@@ -674,10 +683,13 @@ body {
 .aigis-contents__header {
   position: fixed;
   width: 100%;
-  background: #F8F9FB;
-  z-index: 100;
-  height: 55px;
+  background: #87C0A2;
+  color: #fff;
   top: 0;
+  height: 68px;
+  line-height: 68px;
+  padding-left: 65px;
+  z-index: 10;
 }
 
 .aigis-contents__body {
@@ -726,10 +738,6 @@ body {
 }
 
 @media screen and (min-width: 960px) {
-  .aigis-contents__header {
-    z-index: 0;
-  }
-
   .aigis-contents__body {
     padding-left: 60px;
   }

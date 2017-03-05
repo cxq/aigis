@@ -1,12 +1,13 @@
 {{#if components.length}}
   <nav>
-    <h2 class="aigis-module__heading">Components</h2>
     <ul class="aigis-moduleList">
-      {{#each components}}
-        <li class="aigis-moduleList__item">
-          <a href="#{{this.config.name}}">{{this.config.name}}</a>
-        </li>
-      {{/each}}
+      {{#not_equal components.length 1}}
+        {{#each components}}
+          <li class="aigis-moduleList__item">
+            <a href="#{{this.config.name}}">{{this.config.name}}</a>
+          </li>
+        {{/each}}
+      {{/not_equal}}
     </ul>
   </nav>
   <div>
