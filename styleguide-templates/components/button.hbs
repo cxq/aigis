@@ -1,0 +1,21 @@
+{{#if link }}
+  {{#if type}}
+    <a href="#" title="" class="c-button c-button--{{type}}{{#if expand}} c-button--expand{{/if}}{{#if disabled}} c-button--disabled{{/if}}">
+      {{label}}
+    </a>
+  {{else}}
+    <a href="#" title="" class="c-button c-button--primary{{#if expand}} c-button--expand{{/if}}{{#if disabled}} c-button--disabled{{/if}}">
+      {{label}}
+    </a>
+  {{/if}}
+{{else}}
+  {{#if type}}
+    <button {{#if disabled}}disabled {{/if}}class="c-button c-button--{{type}} {{#if expand}}c-button--expand{{/if}}">
+      {{label}}
+    </button>
+  {{else}}
+    <button {{#if disabled}}disabled {{/if}} class="c-button c-button--primary{{#if expand}} c-button--expand{{/if}}">
+      {{label}}
+    </button>
+  {{/if}}
+{{/if}}
