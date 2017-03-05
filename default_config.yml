@@ -1,0 +1,19 @@
+name: Styleguide
+
+# The directory containing the source files to parse recursively
+source:
+  - ./sass
+
+source_type:
+  - .scss
+  - .md
+
+# The directory where you store your own dependencies like scripts, images
+dependencies:
+  - js
+
+# The directory where the styleguide will be built
+dest: ./styleguide-build
+
+# The directory that aigis will build to
+component_dir: ./styleguide-templates
