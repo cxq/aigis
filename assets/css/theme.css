@@ -63,6 +63,10 @@ tag:
   padding-left: 20px;
   border-left: 1px solid #fff;
   margin: 0;
+  font-size: 35px;
+  height: 100%;
+  font-weight: bold;
+  line-height: 2;
 }
 
 .aigis-title:first-letter {
@@ -672,7 +676,7 @@ body {
   box-sizing: border-box;
   padding-right: 10px;
   padding-left: 280px;
-  padding-top: 55px;
+  padding-top: 68px;
   margin: 0 auto;
   transition: padding-left .2s ease-out;
 }
