@@ -62,6 +62,7 @@ tag:
 .aigis-title {
   padding-left: 20px;
   border-left: 1px solid #fff;
+  margin: 0;
 }
 
 .aigis-title:first-letter {
