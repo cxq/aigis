@@ -288,7 +288,7 @@ tag: latest
 .aigis-categoryList li a {
   display: block;
   position: relative;
-  padding: 10px 10px 10px 25px;
+  padding: 7px 10px 7px 25px;
   color: #545D73;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -302,6 +302,8 @@ tag: latest
 }
 
 .aigis-categoryList li[data-path-depth="0"] > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: bold;
 }
 
