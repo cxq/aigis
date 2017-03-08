@@ -10,7 +10,6 @@ var config = {
   template_engine: 'ejs',
   template_dir: './template_ejs',
   log: false,
-  color_palette: true,
   transform: [ 'html' ],
   timestamp_format: 'YYYY/MM/DD HH:mm',
   preview_class: 'aigis-preview',

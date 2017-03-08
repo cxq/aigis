@@ -4,16 +4,19 @@ name: Styleguide
 source:
   - ./sass
 
+# The types that the generator will scan to document comment
 source_type:
   - .scss
   - .md
 
-# The directory where you store your own dependencies like scripts, images
+# The assets needed to build the docs
+# You may put doc related assets here too: images, css, etc.
 dependencies:
   - js
 
 # The directory where the styleguide will be built
 dest: ./styleguide-build
 
-# The directory that aigis will build to
+# The directory where the template used by the generator is placed
 component_dir: ./styleguide-templates
+template_dir: ./styleguide-templates

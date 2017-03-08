@@ -44,9 +44,6 @@ template_global_data: false
 # Aigis displays logs
 log: false
 
-# When you don't want color palette page (color.html) you may set false
-color_palette: true
-
 #
 transform:
   - html
