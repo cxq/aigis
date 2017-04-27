@@ -111,10 +111,14 @@ tag: latest
 ```
 
 */
+
+.aigis-codeblock {
+  overflow: scroll;
+}
+
 .aigis-codeblock, .aigis-preview {
   position: relative;
   margin: 0;
-  overflow: scroll;
 }
 
 .ex-ag-btn {
