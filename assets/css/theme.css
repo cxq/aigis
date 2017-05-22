@@ -178,6 +178,10 @@ tag: latest
   margin-bottom: 0;
 }
 
+.aigis-preview--full {
+  padding: 0;
+}
+
 pre {
   display: none;
 }
