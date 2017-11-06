@@ -293,6 +293,10 @@ tag: latest
   margin-left: 0;
 }
 
+.aigis-categoryList li {
+  display: block;
+}
+
 .aigis-categoryList li a {
   display: block;
   position: relative;
