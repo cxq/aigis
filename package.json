@@ -39,6 +39,7 @@
     "marked": "^0.3.3",
     "moment": "^2.10.2",
     "object-assign": "^4.0.1",
+    "shelljs": "^0.7.8",
     "yargs": "^4.3.2"
   },
   "devDependencies": {
