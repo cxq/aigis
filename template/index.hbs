@@ -14,13 +14,14 @@
   <div class="aigis-container" v-bind:class="{ close : isNavigationClosed}">
     {{include "./sidemenu"}}
     <div class="aigis-contents">
-      <header class="aigis-contents__header">
-        <h1 class="aigis-title">{{title}}</h1>
-        <div class="hamburger" v-on:click="toggleNavigation" v-bind:class="{ 'hamburger--active' : !isNavigationClosed}">
-          <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
-          </div>
+      <div class="hamburger" v-on:click="toggleNavigation" v-bind:class="{ 'hamburger--active' : !isNavigationClosed}">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
         </div>
+      </div>
+      <header class="aigis-contents__header">
+        <span class="aigis-category">{{category}}</span>
+        <h1 class="aigis-title">{{title}}</h1>
       </header>
       <div class="aigis-contents__body">
         {{include "./components"}}
@@ -33,7 +34,7 @@
 <script src="{{root}}assets/js/vendors/vue-2.2.1.js"></script>
 <script src="{{root}}assets/js/vendors/v-media-query.js"></script>
 <script src="{{root}}assets/js/vendors/lodash.js"></script>
-<script src="{{root}}assets/js/components/aigis-module.js"></script>
+<script src="{{root}}assets/js/components/aigis-code.js"></script>
 <script src="{{root}}assets/js/app.js"></script>
 {{include './footer' isComponentDir=true}}
 </body>

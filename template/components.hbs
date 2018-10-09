@@ -1,18 +1,22 @@
 {{#if components.length}}
-  <div>
-    {{#each components}}
-      <aigis-module name="{{this.config.name}}" source-path="{{this.sourcePath}}">
-        {{#if this.config.tag}}
-          <ul class="aigis-tags">
-            {{#each this.config.tag}}
-              <li class="aigis-tags__item aigis-tags__item--{{this}}">{{this}}</li>
-            {{/each}}
-          </ul>
-        {{/if}}
-        {{{this.html}}}
-      </aigis-module>
-    {{/each}}
+<div>
+  {{#each components}}
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading">{{this.config.name}}</h2>
+    <div class="aigis-module__filepath">{{this.sourcePath}}</div>
+    <div class="aigis-module__content">
+      {{#if this.config.tag}}
+        <ul class="aigis-tags">
+          {{#each this.config.tag}}
+          <li class="aigis-tags__item aigis-tags__item--{{this}}">{{this}}</li>
+          {{/each}}
+        </ul>
+      {{/if}}
+      {{{this.html}}}
+    </div>
   </div>
+  {{/each}}
+</div>
 {{else}}
-  {{{html}}}
+{{{html}}}
 {{/if}}
