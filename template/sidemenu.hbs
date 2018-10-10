@@ -1,6 +1,13 @@
 <div class="aigis-sidemenu">
   <header class="aigis-header">
-    <a href="{{root}}index.html">{{config.name}}</a>
+    <a href="{{root}}index.html">
+      {{#if config.logoSrc}}
+        <span class="aigis-logo">
+          <img src="{{config.logoSrc}}" />
+        </span>
+      {{/if}}
+      {{config.name}}
+    </a>
   </header>
   <nav class="aigis-categoryList">
 
