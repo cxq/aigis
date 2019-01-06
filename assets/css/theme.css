@@ -165,6 +165,10 @@ tag: latest
 ```
 
 */
+.aigis-module {
+  margin-bottom: 50px;
+}
+
 .aigis-module pre {
   background-color: #272822;
   color: #f8f8f2;
