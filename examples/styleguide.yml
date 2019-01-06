@@ -31,11 +31,11 @@ dependencies:
 # Index page created from markdown file
 index: ./index.md
 
-# You can choose template engine : ejs, jade, handlebars
+# You can choose template engine : handlebars
 template_engine: handlebars
 
 # The directory containing the tempalte files to generate pages
-# It must contain 'layout.xxx' and 'index.xxx' (.ejs or .jade or .hbs)
+# It must contain 'layout.xxx' and 'index.xxx' (.jade or .hbs)
 template_dir: ./styleguide/template
 
 # data passed to the template comes either from the config or by params
@@ -47,8 +47,6 @@ log: false
 #
 transform:
   - html
-#  - jade
-#  - ejs
 #  - hbs
 #  - coffee
 

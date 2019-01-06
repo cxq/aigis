@@ -7,7 +7,7 @@ var config = {
   dest: './styleguide2',
   dependencies: [ './assets', './css' ],
   index: './index.md',
-  template_engine: 'ejs',
+  template_engine: 'hbs',
   template_dir: './template_ejs',
   log: false,
   transform: [ 'html' ],

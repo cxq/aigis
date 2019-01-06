@@ -219,18 +219,6 @@ Button styles.
 <button class="ag-btn ag-btn--primary">Button</button>
 ```
 
-```ejs
-<a class="ag-btn"><%- name %></a>
-<button class="ag-btn ag-btn--primary"><%- name %></button>
-```
-
-```jade
-a.ag-btn
-  != name
-button.ag-btn.ag-btn--primary
-  != name
-```
-
 ```hbs
 {{include './button.html'}}
 <hr>

@@ -1,7 +1,7 @@
 exports.builder = {
   'e': {
     alias: 'engine',
-    describe: 'choose template engine [ejs, jade, hbs]',
+    describe: 'choose template engine [hbs]',
     default: 'hbs'
   }
 };

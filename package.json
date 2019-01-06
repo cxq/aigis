@@ -32,7 +32,6 @@
     "fs-extra": "^0.30.0",
     "glob": "^7.0.3",
     "handlebars": "^4.0.5",
-    "jade": "^1.9.2",
     "js-beautify": "^1.8.6",
     "js-yaml": "^3.3.0",
     "lodash": "^3.5.0",

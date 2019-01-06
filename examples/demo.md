@@ -39,22 +39,6 @@ ReactDOM.render(<HelloMessage name="John" />, mountNode);
 <button class="ag-btn ag-btn--primary">Button</button>
 ```
 
-## `ejs`
-
-```ejs
-<a class="ag-btn"><%- name %></a>
-<button class="ag-btn ag-btn--primary"><%- name %></button>
-```
-
-## `jade`
-
-```jade
-a.ag-btn
-  != name
-button.ag-btn.ag-btn--primary
-  != name
-```
-
 ## `hbs`
 
 ```hbs

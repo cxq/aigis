@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+
+  <link href="{{root}}assets/css/highlight/okadia.css" rel="stylesheet">
+  <link href="{{root}}assets/css/theme.css" rel="stylesheet">
+  {{include './head' isComponentDir=true}}
+</head>
+<body>
+<div id="app">
+  <div class="aigis-container" v-bind:class="{ close : isNavigationClosed}">
+    {{include "./sidemenu"}}
+    <div class="aigis-contents">
+      <div class="hamburger" v-on:click="toggleNavigation" v-bind:class="{ 'hamburger--active' : !isNavigationClosed}">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+      <header class="aigis-contents__header">
+        <span class="aigis-category">{{category}}</span>
+        <h1 class="aigis-title">{{title}}</h1>
+      </header>
+      <div class="aigis-contents__body">
+        {{include "./components"}}
+        <footer class="aigis-footer">Last update at {{timestamp}} - v{{version}}</footer>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{root}}assets/js/vendors/vue-2.2.1.js"></script>
+<script src="{{root}}assets/js/vendors/v-media-query.js"></script>
+<script src="{{root}}assets/js/vendors/lodash.js"></script>
+<script src="{{root}}assets/js/components/aigis-code.js"></script>
+<script src="{{root}}assets/js/app.js"></script>
+{{include './footer' isComponentDir=true}}
+</body>
+</html>
