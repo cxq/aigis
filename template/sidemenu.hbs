@@ -10,17 +10,16 @@
     </a>
   </header>
   <nav class="aigis-categoryList">
-
     <ul>
       {{#each (renderCollectionTree 'category' key='children')}}
         {{!-- Inline Partial needed for the recursive menu list --}}
         {{#*inline "menulist"}}
-          <li class="{{#if isCurrent}}current{{/if}}" data-path-depth="{{depth}}">
+          <li class="aigis-category-item {{#if isCurrent}}aigis-category-item--active{{/if}}" data-path-depth="{{depth}}">
 
             <a class="{{#if children.length}}aigis-link--parent{{/if}}" href="{{#if href}}{{href}}{{else}}#{{/if}}">{{name}}</a>
 
             {{#if children.length}}
-              <ul>
+              <ul class="aigis-category__children {{#if isCurrentChildren}}aigis-category__children--active{{/if}}">
                 {{#each children}}
                   {{!-- call the partial --}}
                   {{> menulist}}

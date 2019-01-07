@@ -254,6 +254,14 @@ tag: latest
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
+.aigis-category__children {
+  display: none;
+}
+
+.aigis-category__children--active {
+  display: block;
+}
+
 .aigis-container.close .aigis-sidemenu {
   left: -100%;
 }
@@ -309,10 +317,6 @@ tag: latest
   margin-left: 0;
 }
 
-.aigis-categoryList li {
-  display: block;
-}
-
 .aigis-categoryList li a {
   display: block;
   position: relative;
@@ -329,20 +333,24 @@ tag: latest
   text-indent: 0;
 }
 
+.aigis-category-item {
+  display: block;
+}
+
+.aigis-category-item--active > .aigis-category__children {
+  display: block;
+}
+
 .aigis-categoryList li[data-path-depth="0"] > a {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
 }
 
-.aigis-categoryList li[data-path-depth="0"].current > a,
-.aigis-categoryList li[data-path-depth="0"].current > a:hover {
+.aigis-categoryList li[data-path-depth="0"].aigis-category__children > a,
+.aigis-categoryList li[data-path-depth="0"].aigis-category__children > a:hover {
   background-color: #f4f7fb;
   color: #152935;
-}
-
-.aigis-categoryList li[data-path-depth="0"].current ul {
-  display: block;
 }
 
 .aigis-categoryList li a:hover {
@@ -375,8 +383,8 @@ tag: latest
 }
 
 .aigis-categoryList li[data-path-depth] [data-tree-current],
-.aigis-categoryList .current > a,
-.aigis-categoryList .current > a:hover {
+.aigis-categoryList .aigis-category__children > a,
+.aigis-categoryList .aigis-category__children > a:hover {
   background-color: #F8F9FB;
   color: #152935;
 }
