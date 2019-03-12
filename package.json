@@ -1,6 +1,6 @@
 {
   "name": "lora-styleguide",
-  "version": "1.13.1",
+  "version": "1.13.2",
   "description": "For documenting CSS and generating styleguide",
   "homepage": "https://pxgrid.github.io/aigis",
   "author": {
@@ -35,7 +35,7 @@
     "js-beautify": "^1.8.6",
     "js-yaml": "^3.3.0",
     "lodash": "^3.5.0",
-    "marked": "^0.5.0",
+    "marked": "^0.3.3",
     "moment": "^2.22.2",
     "object-assign": "^4.0.1",
     "shelljs": "^0.7.8",
