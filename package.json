@@ -34,23 +34,10 @@
     "handlebars": "^4.3.4",
     "js-beautify": "^1.8.6",
     "js-yaml": "^3.13.1",
-    "lodash": "^3.5.0",
+    "lodash": "^4.17.15",
     "marked": "^0.7.0",
     "moment": "^2.22.2",
-    "object-assign": "^4.0.1",
     "shelljs": "^0.7.8",
     "yargs": "^4.3.2"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^3.9.0",
-    "gulp-mocha": "^3.0.1",
-    "gulp-plumber": "^1.0.0",
-    "power-assert": "^1.4.2"
-  },
-  "scripts": {
-    "start": "gulp",
-    "test": "gulp test",
-    "watch": "gulp watch"
   }
 }
